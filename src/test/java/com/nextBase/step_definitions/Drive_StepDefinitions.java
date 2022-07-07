@@ -33,6 +33,11 @@ public class Drive_StepDefinitions {
 
     }
 
+    @When("user clicks Drive")
+    public void userClicksDrive() {
+        drivePage.drive.click();
+    }
+
     @When("user clicks My Drive")
     public void userClicksMyDrive() {
         drivePage.myDrive.click();
@@ -56,6 +61,7 @@ public class Drive_StepDefinitions {
     public void verifyThatUserDisplaysAllDocuments() {
         Assert.assertTrue(Driver.getDriver().getTitle().contains("All Documents"));
     }
+
 
 
 }
